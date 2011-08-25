@@ -45,7 +45,7 @@ $c.add-service(
 ok($c.fetch('foo').get);
 ok($c.fetch('bar').get);
 
-ok($c.resolve(service => 'foo'));
+ok($c.resolve('foo'));
 
 ok($c.fetch('foo').get.bar);
 

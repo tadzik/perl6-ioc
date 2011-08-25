@@ -92,7 +92,7 @@ IoC - Wire your application components together using inversion of control
 
   };
 
-  my $app = $c.resolve(service => 'app');
+  my $app = $c.resolve('app');
   $app.run();
 
 =head1 DESCRIPTION

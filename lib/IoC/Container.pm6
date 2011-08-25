@@ -13,7 +13,7 @@ class IoC::Container {
         return %!services{$service-name};
     }
 
-    method resolve(:$service) {
+    method resolve($service) {
         return self.fetch($service).get;
     }
 };
@@ -83,7 +83,7 @@ Adds a service (L<IoC::Service> object) to your container
 
 Returns the service provided by the string.
 
-=item resolve(service => '<service>')
+=item resolve('<service>')
 
 Returns the object the service generates (equivalent to C<fetch('<service>').get()>)
 
