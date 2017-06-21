@@ -1,4 +1,4 @@
-module IoC;
+unit module IoC;
 
 use IoC::Container;
 use IoC::ConstructorInjection;
@@ -32,7 +32,7 @@ sub service($pair) is export {
         %params<value> = $pair.value;
     }
     else {
-        %params = (%params, $pair.value.pairs);
+        %params = (%params, |$pair.value.pairs);
     }
 
     my $service;

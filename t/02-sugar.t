@@ -1,5 +1,3 @@
-BEGIN { @*INC.push('lib') };
-
 use IoC;
 use Test;
 plan 5;

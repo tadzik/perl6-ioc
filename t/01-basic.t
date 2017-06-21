@@ -1,5 +1,3 @@
-BEGIN { @*INC.push('lib') };
-
 use IoC::Container;
 use IoC::ConstructorInjection;
 use IoC::BlockInjection;
